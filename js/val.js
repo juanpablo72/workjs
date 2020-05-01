@@ -1,7 +1,7 @@
 //variables de los campos
 var nombre =document.getElementById("nombre");
 var apellido =document.getElementById("apellido");
-var genero =document.getElementById("genero");
+
 var ci =document.getElementById("ci");
 var telefono =document.getElementById("telefono");
 var correo =document.getElementById("correo");
@@ -28,9 +28,9 @@ function guardar() {
   
   
 
-  if (nombre.value === ""|| apellido.value === "" || genero.value === "" || ci.value === "" || telefono.value === "" || correo.value === "")
+  if (nombre.value === ""|| apellido.value === ""  || ci.value === "" || telefono.value === "" || correo.value === "")
    {
-    if (nombre.value === "" && apellido.value === "" && ci.value === "" && genero.value === "" && telefono.value === "" && correo.value === "") {
+    if (nombre.value === "" && apellido.value === "" && ci.value === ""  && telefono.value === "" && correo.value === "") {
       mensaje.push(" todos los campos estan vacios <br>");
       envio =false;
     }
@@ -57,10 +57,7 @@ function guardar() {
         mensaje.push("campo apellido esta vacio <br>");
         envio =false;
       }
-      else if ( genero.value === "") {
-        mensaje.push("campo genero sin selecionar <br>");
-        envio =false;
-      }
+      
     envio =false;
   }
   else
@@ -104,7 +101,7 @@ function guardar() {
     mensaje.push("campo apellido solo letras <br>");
     envio =false;
   }
-
+  
   error.innerHTML = mensaje.join(" ");
   if(envio===true)
   {
