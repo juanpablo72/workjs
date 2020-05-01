@@ -18,7 +18,7 @@ vcor =/\w+@\w+\.+[a-z]/;
 vnum=/^[0-9]+$/
 
 vtel=/^[\+]?[(]?[0-9]{2}[)]?[-\s\.]?[0-9]{4}[-\s\.]?[0-9]{4,8}$/
-vnom= /^[a-z][a-z]*/
+vnom= /^[a-zA-Z][a-zA-Z]*/
 
 
 
@@ -94,6 +94,14 @@ function guardar() {
   }
   if ((!vtel.test(telefono.value))&& telefono.value !=="") {
     mensaje.push("telefono solo numeros <br>");
+    envio =false;
+  }
+  if ((!vnom.test(nombre.value))&& nombre.value !=="") {
+    mensaje.push("campo nombre solo letras <br>");
+    envio =false;
+  }
+  if ((!vnom.test(apellido.value))&& apellido.value !=="") {
+    mensaje.push("campo apellido solo letras <br>");
     envio =false;
   }
 
