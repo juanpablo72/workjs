@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>validaciones</title>
+    <link rel="stylesheet" href="css/icono.css">
     <link rel="stylesheet" href="css/jp.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -19,17 +20,29 @@
                         <p id="error"> </p>
                         <form action="" method="POST">
                             <div class="form-group mt-10">
-                                <input id="nombre" name="nombre" type="text" placeholder="nombre"
-                                    class="form-control mt-5">
+                                <label for="" style="color: black;">Nombre:</label>
+                                <div class="row">
+                                    <div class="col-1">
+                                        <span class="icon-user-tie" style="color:blue;"  ></span>
+                                    </div>
+                                    <div class="col-11">
+                                        <input id="nombre" name="nombre" type="text" placeholder="nombre"
+                                    class="form-control ">
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group ">
+                                <label for="" style="color: black;">apellido</label>
                                 <input id="apellido" name="apellido" type="text" placeholder="apellido"
                                     class="form-control ">
                             </div>
+                            <label for="" style="color: black;">documento</label>
                             <div class="row">
-                                <div class="col-3">
+                                
+                                <div class="col-5">
+                                    
                                     <div class="form-group">
-                                        <select name="select" id="select">
+                                        <select class="form-control" name="select" id="select">
                                             <option value="">documento</option>
                                             <option value="1">V->VENEZOLANO</option>
                                             <option value="2">E-EXTRANJERO</option>
@@ -37,7 +50,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-7 ml-5">
+                                <div class="col-5 ml-5">
                                     <div class="form-group ">
                                         <input id="ci" name="ci" type="text" placeholder="ci" class="form-control ">
                                     </div>
@@ -47,7 +60,7 @@
                             <label for="" style="color: black;">genero</label>
                             <div class="row">
                                 <div class="form-check">
-                                    <input type="radio" id="hombre" name="genero" value="hombre">
+                                    <input class="" type="radio" id="hombre" name="genero" value="hombre">
                                     <label for="hombre" style="color: black;">hombre</label>
                                     <input type="radio" id="mujer" name="genero" value="mujer">
                                     <label for="mujer" style="color: black;">mujer</label>
@@ -57,10 +70,12 @@
 
                             </div>
                             <div class="form-group ">
+                                <label for="" style="color: black;">Telefono</label>
                                 <input id="telefono" name="telefono" type="text" placeholder="telefono"
                                     class="form-control ">
                             </div>
                             <div class="form-group ">
+                                <label for="" style="color: black;">Correo</label>
                                 <input id="correo" name="correo" type="text" placeholder="correo" class="form-control ">
                             </div>
                             <div class="form-group">
